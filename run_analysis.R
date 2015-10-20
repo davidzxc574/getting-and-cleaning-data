@@ -1,5 +1,6 @@
 #1.Read all datasets after downloading and unzipping to a desired folder
 setwd("E:/documents/IT tutorial/data science/getting and cleaning data/UCI HAR Dataset")
+rm(list=ls())
 subject_test<-read.csv("./test/subject_test.txt",header=FALSE)
 test_set<-read.table("./test/X_test.txt",header=FALSE)
 test_label<-read.table("./test/y_test.txt",header=FALSE)
